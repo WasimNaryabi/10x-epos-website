@@ -176,7 +176,7 @@ onUnmounted(() => {
 .logo-text {
     font-size: 1.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1a0b5e, #5842c3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -207,7 +207,7 @@ onUnmounted(() => {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1a0b5e, #5842c3);
     transition: width 0.3s;
 }
 
@@ -221,7 +221,7 @@ onUnmounted(() => {
 
 .btn-demo {
     padding: 0.75rem 1.75rem;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1a0b5e, #5842c3);
     color: white;
     border: none;
     border-radius: 50px;

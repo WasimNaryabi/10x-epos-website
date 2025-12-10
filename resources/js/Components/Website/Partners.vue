@@ -1,5 +1,5 @@
 <template>
-    <section class="partners-section">
+    <section id="partners" class="partners-section">
         <div class="partners-container">
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
@@ -129,7 +129,7 @@ const categories = ref([
 .section-badge {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1a0b5e, #5842c3);
     color: white;
     border-radius: 50px;
     font-weight: 600;
@@ -307,7 +307,7 @@ const categories = ref([
 
 .api-button {
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1a0b5e, #5842c3);
     color: white;
     border: none;
     border-radius: 50px;
@@ -364,7 +364,7 @@ const categories = ref([
 .integration-cta {
     text-align: center;
     padding: 3rem;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #1a0b5e, #5842c3);
     border-radius: 20px;
     color: white;
     margin-top: 4rem;

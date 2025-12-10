@@ -1,5 +1,5 @@
 <template>
-    <section class="testimonials-section">
+    <section id="testimonials" class="testimonials-section">
         <div class="testimonials-container">
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
