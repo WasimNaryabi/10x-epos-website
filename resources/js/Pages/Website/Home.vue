@@ -15,7 +15,7 @@
             <Features @request-demo="openDemoModal" />
 
             <!-- Pricing Section -->
-            <Pricing @request-demo="openDemoModal" />
+            <!-- <Pricing @request-demo="openDemoModal" /> -->
 
             <!-- Testimonials -->
             <Testimonials />

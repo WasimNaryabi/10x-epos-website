@@ -3,7 +3,7 @@
         <div class="contact-container">
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Get in Touch</h2>
+                <h2 class="section-title">Request a demo</h2>
                 <p class="section-subtitle">
                     Ready to transform your restaurant business? Contact us today for a free consultation
                 </p>

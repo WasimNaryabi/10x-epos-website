@@ -4,7 +4,7 @@
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Integrations</span>
-                <h2 class="section-title">Seamlessly Integrates with Your Favorite Tools</h2>
+                <h2 class="section-title">One EPOS, Fully connected with Your Favorite Tools</h2>
                 <p class="section-subtitle">
                     Connect with the platforms you already use to create a unified ecosystem
                 </p>
@@ -51,14 +51,14 @@
     
 
             <!-- CTA -->
-            <div class="integration-cta" data-aos="fade-up">
+            <!-- <div class="integration-cta" data-aos="fade-up">
                 <h3>Don't See Your Tool?</h3>
                 <p>We're constantly adding new integrations. Let us know what you need!</p>
                 <button @click="$emit('contact-sales')" class="cta-button">
                     <Icon name="email" :size="20" color="currentColor" />
                     Request Integration
                 </button>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

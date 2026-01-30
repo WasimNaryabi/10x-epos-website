@@ -57,7 +57,7 @@
             </div>
 
             <!-- Video Testimonial -->
-            <div class="video-testimonial" data-aos="fade-up">
+            <!-- <div class="video-testimonial" data-aos="fade-up">
                 <h3>Watch How We Helped Transform Their Business</h3>
                 <div class="video-wrapper">
                     <div class="video-placeholder">
@@ -65,7 +65,7 @@
                         <p>Customer Success Story</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
@@ -99,30 +99,7 @@ const testimonials = ref([
         initials: 'EW',
         color: 'linear-gradient(135deg, #4facfe, #00f2fe)'
     },
-    {
-        name: 'David Brown',
-        role: 'Restaurant Manager',
-        company: 'The Grill House, Birmingham',
-        text: 'Customer support is outstanding. Any issues are resolved within hours. The reporting features help us make data-driven decisions every single day.',
-        initials: 'DB',
-        color: 'linear-gradient(135deg, #43e97b, #38f9d7)'
-    },
-    {
-        name: 'Lisa Anderson',
-        role: 'Co-Owner',
-        company: 'Pasta Palace, Edinburgh',
-        text: 'We saw immediate improvements in efficiency. The staff scheduling feature has cut our labor costs by 15% while maintaining better service quality.',
-        initials: 'LA',
-        color: 'linear-gradient(135deg, #fa709a, #fee140)'
-    },
-    {
-        name: 'James Wilson',
-        role: 'Owner',
-        company: 'Urban Eats, Cardiff',
-        text: 'Best investment we made for our business. The table management and reservation system has reduced wait times and improved customer satisfaction dramatically.',
-        initials: 'JW',
-        color: 'linear-gradient(135deg, #30cfd0, #330867)'
-    }
+    
 ]);
 </script>
 

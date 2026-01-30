@@ -4,7 +4,7 @@
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Features</span>
-                <h2 class="section-title">Everything You Need to Run Your Business</h2>
+                <h2 class="section-title">Everything your business needs in one place</h2>
                 <p class="section-subtitle">
                     Powerful features designed specifically for cafes and restaurants. 
                     Streamline operations, increase efficiency, and boost profitability.
@@ -37,11 +37,11 @@
 
             <!-- CTA Section -->
             <div class="features-cta" data-aos="fade-up">
-                <h3>Ready to transform your business?</h3>
-                <p>Join 500+ restaurants already using 10x Global EPOS</p>
+                <h3>Ready to 10x your business?</h3>
+                <p>Join 50+ restaurants already using 10x Global EPOS</p>
                 <button @click="$emit('request-demo')" class="cta-button">
                     <Icon name="calendar" :size="20" color="currentColor" />
-                    Request Free Demo
+                    Request a free 30 min consultation
                 </button>
             </div>
         </div>

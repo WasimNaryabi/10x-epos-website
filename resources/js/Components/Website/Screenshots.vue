@@ -3,7 +3,7 @@
         <div class="screenshots-container">
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">See It In Action</h2>
+                <h2 class="section-title">Sell smarter, Manage faster</h2>
                 <p class="section-subtitle">
                     Explore our intuitive interface designed for speed and efficiency
                 </p>
