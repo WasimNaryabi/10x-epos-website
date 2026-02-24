@@ -92,7 +92,7 @@ const scrollToSection = (sectionId) => {
             // Account for navbar height + construction banner height
             const navbarHeight = 80; // Adjust based on your navbar height
             const bannerHeight = 48; // Construction banner height
-            const totalOffset = navbarHeight + bannerHeight;
+            const totalOffset = navbarHeight;
             
             const elementPosition = element.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - totalOffset;
@@ -206,7 +206,6 @@ onUnmounted(() => {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     z-index: 1000;
     transition: all 0.3s ease;
-    top: 48px; /* Height of construction banner */
     left: 0;
 }
 
