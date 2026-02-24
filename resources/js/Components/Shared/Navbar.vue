@@ -1,13 +1,13 @@
 <template>
     <!-- Under Construction Banner -->
-    <div class="construction-banner">
+    <!-- <div class="construction-banner">
         <div class="construction-content">
             <Icon name="settings" :size="18" color="white" class="construction-icon" />
             <span class="construction-text">
                 <strong>Website Under Construction</strong> – We will be operational soon!
             </span>
         </div>
-    </div>
+    </div> -->
 
     <nav id="navbar" class="navbar" :class="{ scrolled: isScrolled }">
         <div class="nav-container">

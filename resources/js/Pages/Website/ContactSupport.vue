@@ -200,16 +200,16 @@ const contactMethods = ref([
         icon: 'email',
         title: 'Email Support',
         description: 'Send us an email and we\'ll respond within 24 hours',
-        link: 'mailto:support@10xglobalepos.com',
-        linkText: 'support@10xglobalepos.com'
+        link: 'mailto:info@10xglobale.co.uk',
+        linkText: 'info@10xglobale.co.uk'
     },
-    {
-        icon: 'chat',
-        title: 'Live Chat',
-        description: 'Chat with us in real-time',
-        link: '#',
-        linkText: 'Start Live Chat'
-    },
+    // {
+    //     icon: 'chat',
+    //     title: 'Live Chat',
+    //     description: 'Chat with us in real-time',
+    //     link: '#',
+    //     linkText: 'Start Live Chat'
+    // },
     {
         icon: 'headset',
         title: 'WhatsApp',
