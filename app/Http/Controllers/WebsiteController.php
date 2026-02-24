@@ -31,6 +31,32 @@ class WebsiteController extends Controller
         return Inertia::render('Website/Features');
     }
 
+    public function helpcenter(): Response
+    {
+        return Inertia::render('Website/HelpCenter');
+    }
+
+    public function privacypolicy(): Response
+    {
+        return Inertia::render('Website/PrivacyPolicy');
+    }
+
+    public function contactsupport(): Response
+    {
+        return Inertia::render('Website/ContactSupport');
+    }
+
+    public function termsofservice(): Response
+    {
+        return Inertia::render('Website/TermsOfService');
+    }
+
+
+    public function aboutus(): Response
+    {
+        return Inertia::render('Website/Aboutus');
+    }
+
     /**
      * Display pricing page
      */

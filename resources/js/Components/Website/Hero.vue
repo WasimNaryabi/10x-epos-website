@@ -6,11 +6,14 @@
         <div class="hero-container">
             <!-- Left Content -->
             <div class="hero-content" data-aos="fade-right">
+                <h4>Global Innovation for Local Success</h4>
                 <h1 class="hero-title">
                     Transform Your 
                     <span class="highlight">Restaurant Business</span> 
-                    with 10x Global EPOS
+                    with 10x Global
+                    
                 </h1>
+                
                 
                 <p class="hero-description">
                     The complete point of sale solution designed for cafes and restaurants. 
@@ -48,10 +51,10 @@
 
                 <!-- Trust Indicators -->
                 <div class="trust-indicators">
-                    <div class="trust-item">
+                    <!-- <div class="trust-item">
                         <div class="trust-number">500+</div>
                         <div class="trust-label">Active Restaurants</div>
-                    </div>
+                    </div> -->
                     <div class="trust-item">
                         <div class="trust-number">99.9%</div>
                         <div class="trust-label">Uptime</div>

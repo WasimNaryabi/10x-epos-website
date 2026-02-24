@@ -4,12 +4,12 @@
             <div v-if="show" class="modal-overlay" @click="closeModal">
                 <div class="modal-container" @click.stop>
                     <button class="modal-close" @click="closeModal">
-                        <i class="fas fa-times"></i>
+                        <span>&times;</span>
                     </button>
 
                     <div class="modal-header">
                         <h2>Request a Free Demo</h2>
-                        <p>See 10x Global EPOS in action! Book your personalized demo today.</p>
+                        <p>See 10x Global in action! Book your personalized demo today.</p>
                     </div>
 
                     <form @submit.prevent="submitForm" class="modal-form">

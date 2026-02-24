@@ -7,7 +7,7 @@
                     <img src="/images/10x-global-logo.png" alt="10x Global EPOS" class="footer-logo-img" />
                 </div>
                 <p>
-                    The complete point of sale solution for modern restaurants and cafes. 
+                    The complete point of sale solution for modern restaurants and cafes.
                     Streamline operations, boost sales, and delight customers.
                 </p>
                 <div class="social-links">
@@ -31,58 +31,63 @@
 
             <!-- Product Links -->
             <div class="footer-section">
-                <h3>Product</h3>
+                <!-- <h3>Product</h3>
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#product">Product Demo</a></li>
-                    <li><a href="#">What's New</a></li>
-                </ul>
+                     <li><a href="#">What's New</a></li> 
+                </ul> -->
             </div>
 
             <!-- Company Links -->
             <div class="footer-section">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                    <li><a href="#">Press Kit</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <!-- <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li> -->
+                    <!-- <li><a @click.prevent="navigateToSection('partners')">Partners</a></li> -->
+                    <li><a @click.prevent="navigateToSection('contact')">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Support Links -->
             <div class="footer-section">
                 <h3>Support</h3>
-                <ul>
+                <!-- <ul>
                     <li><a href="#">Help Center</a></li>
                     <li><a href="#">Documentation</a></li>
                     <li><a href="#">Video Tutorials</a></li>
                     <li><a href="#">Community Forum</a></li>
-                    <li><a href="#">System Status</a></li>
+                    <li><a href="#">System Status</a></li> 
                     <li><a href="#">Contact Support</a></li>
+
+                </ul> -->
+
+                <ul>
+                    <li><a href="/help-center">Help Center</a></li>
+                    <li><a href="/contact-support">Contact Support</a></li>
                 </ul>
             </div>
 
             <!-- Legal Links -->
             <div class="footer-section">
                 <h3>Legal</h3>
-                <ul>
+                <!-- <ul>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">GDPR Compliance</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Acceptable Use</a></li>
+                </ul> -->
+                <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
-            <p>&copy; {{ currentYear }} 10x Global EPOS. All rights reserved. Built with ❤️ for restaurants worldwide.</p>
+            <p>&copy; {{ currentYear }} 10x Global. All rights reserved. Built with ❤️ for restaurants worldwide.</p>
         </div>
     </footer>
 </template>
@@ -92,6 +97,44 @@ import { computed } from 'vue';
 import Icon from '@/Components/Shared/Icon.vue';
 
 const currentYear = computed(() => new Date().getFullYear());
+
+const isOnHomePage = () => {
+    const path = window.location.pathname;
+    return path === '/' || path === '/home' || path === '';
+};
+
+const scrollToSection = (sectionId) => {
+    setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            // Account for navbar height + construction banner height
+            const navbarHeight = 80; // Adjust based on your navbar height
+            const bannerHeight = 48; // Construction banner height
+            const totalOffset = navbarHeight + bannerHeight;
+
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - totalOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }, 100);
+};
+
+
+const navigateToSection = (sectionId) => {
+    // closeMobileMenu();
+
+    if (isOnHomePage()) {
+        // We're on home page, scroll to section
+        scrollToSection(sectionId);
+    } else {
+        // We're on another page, redirect to home with hash
+        window.location.href = `/#${sectionId}`;
+    }
+};
 </script>
 
 <style scoped>

@@ -16,7 +16,15 @@ use Inertia\Inertia;
 
 Route::get('/', [WebsiteController::class, 'index'])->name('home');
 Route::get('/features', [WebsiteController::class, 'features'])->name('features');
+Route::get('/aboutus', [WebsiteController::class, 'aboutus'])->name('aboutus');
 Route::get('/pricing', [WebsiteController::class, 'pricing'])->name('pricing');
+
+Route::get('/help-center', [WebsiteController::class, 'helpcenter'])->name('helpcenter');
+Route::get('/contact-support', [WebsiteController::class, 'contactsupport'])->name('contactsupport');
+Route::get('/privacy-policy', [WebsiteController::class, 'privacypolicy'])->name('privacypolicy');
+Route::get('/terms-of-service', [WebsiteController::class, 'termsofservice'])->name('termsofservice');
+
+
 
 // Contact & Demo Forms
 Route::post('/contact', [WebsiteController::class, 'submitContact'])->name('contact.submit');

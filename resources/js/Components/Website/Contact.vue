@@ -12,7 +12,7 @@
             <div class="contact-grid">
                 <!-- Contact Information -->
                 <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
+                    <!-- <div class="contact-item">
                         <div class="contact-icon">
                             <Icon name="location" :size="24" color="white" />
                         </div>
@@ -20,7 +20,7 @@
                             <h4>Visit Us</h4>
                             <p>10x Global EPOS Ltd<br>London, United Kingdom</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -29,9 +29,8 @@
                         <div class="contact-details">
                             <h4>Call Us</h4>
                             <p>
-                                Sales: +44 20 1234 5678<br>
-                                Support: +44 20 8765 4321<br>
-                                Mon-Fri, 9am-8pm GMT
+                                <a href="callto:+44 20 1234 5678">+44 20 1234 5678</a><br>
+                                Mon-Fri, 9am-5pm GMT
                             </p>
                         </div>
                     </div>
@@ -43,8 +42,7 @@
                         <div class="contact-details">
                             <h4>Email Us</h4>
                             <p>
-                                Sales: <a href="mailto:sales@10xglobal.co.uk">sales@10xglobal.co.uk</a><br>
-                                Support: <a href="mailto:support@10xglobal.co.uk">support@10xglobal.co.uk</a>
+                                <a href="mailto:info@10xglobal.co.uk">info@10xglobal.co.uk</a><br>
                             </p>
                         </div>
                     </div>

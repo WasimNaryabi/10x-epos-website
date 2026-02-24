@@ -1,12 +1,6 @@
 <template>
-    <svg 
-        :width="size" 
-        :height="size" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon-svg"
-    >
+    <svg :width="size" :height="size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="icon-svg">
         <g v-html="iconPath"></g>
     </svg>
 </template>
@@ -294,6 +288,39 @@ const iconPath = computed(() => {
             <path d="M12 2l-8 4.5V18l8 4 8-4V6.5L12 2z" stroke="${props.color}" stroke-width="2" fill="none"/>
             <path d="M12 8v8M8 10l4 4 4-4" stroke="${props.color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         `,
+        'zap': `<path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="${props.color}"/>`,
+
+        'trending-up': `<polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="${props.color}"/>
+                    <polyline points="17 6 23 6 23 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+
+        'award': `<circle cx="12" cy="8" r="7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="${props.color}"/>`,
+
+        'user-check': `<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="${props.color}"/>
+                   <circle cx="8.5" cy="7" r="4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                   <polyline points="17 11 19 13 23 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="${props.color}"/>`,
+
+        'default': `<circle cx="12" cy="12" r="10" stroke-width="2"/>`
+        ,
+
+        // Technology
+        'code': `<polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+             <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+
+        
+
+        // Alerts & Status
+        'ban': `<circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+
+    
+        'search': `<circle cx="11" cy="11" r="8" stroke="${props.color}" stroke-width="2" fill="none"/>
+               <path d="M21 21l-4.35-4.35" stroke="${props.color}" stroke-width="2" stroke-linecap="round"/>`,
+
+        'rocket': `<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z" stroke="${props.color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+               <path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z" stroke="${props.color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+               <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" stroke="${props.color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+
         'just-eat': `
             <circle cx="12" cy="9" r="5" stroke="${props.color}" stroke-width="2" fill="none"/>
             <path d="M8 13c0 3 1.5 5 4 5s4-2 4-5" stroke="${props.color}" stroke-width="2" stroke-linecap="round"/>
@@ -302,7 +329,7 @@ const iconPath = computed(() => {
             <path d="M7 20h10" stroke="${props.color}" stroke-width="2" stroke-linecap="round"/>
         `
     };
-    
+
     return icons[props.name] || '';
 });
 </script>

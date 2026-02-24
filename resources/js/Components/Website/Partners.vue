@@ -4,7 +4,7 @@
             <!-- Section Header -->
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Integrations</span>
-                <h2 class="section-title">One EPOS, Fully connected with Your Favorite Tools</h2>
+                <h2 class="section-title">One EPOS, Fully Connected with Your Favorite Tools</h2>
                 <p class="section-subtitle">
                     Connect with the platforms you already use to create a unified ecosystem
                 </p>
@@ -30,7 +30,7 @@
             </div>
 
             <!-- Integration Categories -->
-            <div class="categories-section" data-aos="fade-up">
+            <!-- <div class="categories-section" data-aos="fade-up">
                 <h3>Integration Categories</h3>
                 <div class="categories-grid">
                     <div 
@@ -46,7 +46,7 @@
                         <div class="category-count">{{ category.count }}+ integrations</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
     
 
@@ -71,7 +71,6 @@ defineEmits(['contact-sales']);
 
 const partners = ref([
     { name: 'Stripe', icon: 'stripe', color: '#635BFF', category: 'Payments' },
-    { name: 'PayPal', icon: 'paypal', color: '#00457C', category: 'Payments' },
     { name: 'Sumup', icon: 'square', color: '#000000', category: 'Payments' },
     { name: 'Uber Eats', icon: 'uber-eats', color: '#000000', category: 'Delivery' },
     { name: 'Deliveroo', icon: 'deliveroo', color: '#00CCBC', category: 'Delivery' },

@@ -12,18 +12,18 @@
     <nav id="navbar" class="navbar" :class="{ scrolled: isScrolled }">
         <div class="nav-container">
             <!-- Logo -->
-            <a href="/" class="logo">
-                <img src="/images/10x-global-logo.png" alt="10x Global EPOS" class="logo-img" />
+            <a href="/" class="logo" @click.prevent="navigateToHome">
+                <img src="/images/10x-global-logo.png" alt="10x Global" class="logo-img" />
                 <span class="logo-text"></span>
             </a>
 
             <!-- Desktop Navigation -->
             <ul class="nav-links" id="navLinks" :class="{ 'mobile-active': mobileMenuOpen }">
-                <li><a href="#features" @click="closeMobileMenu">Features</a></li>
-                <li><a href="#pricing" @click="closeMobileMenu">Pricing</a></li>
-                <li><a href="#testimonials" @click="closeMobileMenu">Testimonials</a></li>
-                <li><a href="#partners" @click="closeMobileMenu">Partners</a></li>
-                <li><a href="#contact" @click="closeMobileMenu">Contact</a></li>
+                <li><a @click.prevent="navigateToSection('features')">Features</a></li>
+                <!-- <li><a @click.prevent="navigateToSection('pricing')">Pricing</a></li> -->
+                <li><a @click.prevent="navigateToSection('testimonials')">Testimonials</a></li>
+                <li><a @click.prevent="navigateToSection('partners')">Partners</a></li>
+                <li><a @click.prevent="navigateToSection('contact')">Contact</a></li>
                 <li class="nav-button-item">
                     <button @click="handleDemoClick" class="btn-demo">
                         Request Demo
@@ -54,6 +54,57 @@ const emit = defineEmits(['request-demo']);
 const isScrolled = ref(false);
 const mobileMenuOpen = ref(false);
 
+// Check if we're on the home page
+const isOnHomePage = () => {
+    const path = window.location.pathname;
+    return path === '/' || path === '/home' || path === '';
+};
+
+// Navigate to home page
+const navigateToHome = () => {
+    closeMobileMenu();
+    
+    if (isOnHomePage()) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        window.location.href = '/';
+    }
+};
+
+// Navigate to a section (home or redirect to home with hash)
+const navigateToSection = (sectionId) => {
+    closeMobileMenu();
+    
+    if (isOnHomePage()) {
+        // We're on home page, scroll to section
+        scrollToSection(sectionId);
+    } else {
+        // We're on another page, redirect to home with hash
+        window.location.href = `/#${sectionId}`;
+    }
+};
+
+// Scroll to section smoothly
+const scrollToSection = (sectionId) => {
+    setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            // Account for navbar height + construction banner height
+            const navbarHeight = 80; // Adjust based on your navbar height
+            const bannerHeight = 48; // Construction banner height
+            const totalOffset = navbarHeight + bannerHeight;
+            
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - totalOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }, 100);
+};
+
 const handleScroll = () => {
     isScrolled.value = window.scrollY > 50;
 };
@@ -79,8 +130,20 @@ const handleDemoClick = () => {
     emit('request-demo');
 };
 
+// Handle hash navigation on page load
+const handleInitialHash = () => {
+    const hash = window.location.hash;
+    if (hash && isOnHomePage()) {
+        const sectionId = hash.substring(1); // Remove the #
+        scrollToSection(sectionId);
+    }
+};
+
 onMounted(() => {
     window.addEventListener('scroll', handleScroll);
+    
+    // Handle hash on page load
+    handleInitialHash();
 });
 
 onUnmounted(() => {
@@ -165,10 +228,11 @@ onUnmounted(() => {
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .logo-img {
-    height: 80px;
+    height: 90px;
     width: auto;
     object-fit: contain;
 }
@@ -198,6 +262,7 @@ onUnmounted(() => {
     font-size: 0.95rem;
     transition: color 0.3s;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-links a::after {

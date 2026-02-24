@@ -6,20 +6,20 @@
                 <span class="section-badge">Testimonials</span>
                 <h2 class="section-title">Trusted by Restaurants Worldwide</h2>
                 <p class="section-subtitle">
-                    See what our customers have to say about transforming their business with 10x Global EPOS
+                    See what our customers have to say about transforming their business with 10x Global
                 </p>
             </div>
 
             <!-- Stats -->
             <div class="stats-grid" data-aos="fade-up">
-                <div class="stat-card">
+                <!-- <div class="stat-card">
                     <div class="stat-number">500+</div>
                     <div class="stat-label">Active Restaurants</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">50K+</div>
                     <div class="stat-label">Daily Transactions</div>
-                </div>
+                </div> -->
                 <div class="stat-card">
                     <div class="stat-number">99%</div>
                     <div class="stat-label">Customer Satisfaction</div>
@@ -79,7 +79,7 @@ const testimonials = ref([
         name: 'Sarah Johnson',
         role: 'Owner',
         company: 'The Corner Bistro, London',
-        text: 'Since implementing 10x Global EPOS, our table turnover has increased by 30% and order accuracy is near perfect. The KOT system has revolutionized our kitchen operations.',
+        text: 'Since implementing 10x Global, our table turnover has increased by 30% and order accuracy is near perfect. The KOT system has revolutionized our kitchen operations.',
         initials: 'SJ',
         color: 'linear-gradient(135deg, #667eea, #764ba2)'
     },
@@ -87,7 +87,7 @@ const testimonials = ref([
         name: 'Michael Chen',
         role: 'General Manager',
         company: 'Spice Garden Restaurant Chain',
-        text: 'Managing multiple locations was a nightmare until we switched to 10x EPOS. Now I can see real-time data from all our restaurants in one dashboard. Game changer!',
+        text: 'Managing multiple locations was a nightmare until we switched to 10x Global. Now I can see real-time data from all our restaurants in one dashboard. Game changer!',
         initials: 'MC',
         color: 'linear-gradient(135deg, #f093fb, #f5576c)'
     },

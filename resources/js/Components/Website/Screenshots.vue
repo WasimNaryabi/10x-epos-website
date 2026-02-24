@@ -86,7 +86,7 @@
             <!-- CTA -->
             <div class="screenshots-cta" data-aos="fade-up">
                 <h3>Ready to Transform Your Business?</h3>
-                <p>See how 10x Global EPOS can streamline your operations</p>
+                <p>See how 10x Global can streamline your operations</p>
                 <button @click="$emit('request-demo')" class="cta-button">
                     <Icon name="calendar" :size="20" color="white" />
                     Schedule a Demo
