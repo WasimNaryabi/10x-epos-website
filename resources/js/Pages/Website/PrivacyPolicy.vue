@@ -159,9 +159,9 @@
                             <h2>{{ sections[10].title }}</h2>
                             <p>If you have any questions about this Privacy Policy, please contact us:</p>
                             <div class="contact-info">
-                                <p><strong>Email:</strong> privacy@10xglobalepos.com</p>
-                                <p><strong>Phone:</strong> +44 20 1234 5678</p>
-                                <p><strong>Address:</strong> 123 Business Street, Tech City, London, EC1A 1BB, UK</p>
+                                <p><strong>Email:</strong> info@10xglobal.co.uk</p>
+                                <p><strong>Phone:</strong>020 805 800 86</p>
+                                <!-- <p><strong>Address:</strong> 123 Business Street, Tech City, London, EC1A 1BB, UK</p> -->
                             </div>
                         </div>
                     </div>

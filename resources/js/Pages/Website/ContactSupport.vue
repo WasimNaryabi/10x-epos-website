@@ -193,8 +193,8 @@ const contactMethods = ref([
         icon: 'phone',
         title: 'Phone Support',
         description: 'Speak directly with our support team',
-        link: 'tel:+442012345678',
-        linkText: '+44 20 1234 5678'
+        link: 'tel:020 805 800 86',
+        linkText: '020 805 800 86'
     },
     {
         icon: 'email',
@@ -214,7 +214,7 @@ const contactMethods = ref([
         icon: 'headset',
         title: 'WhatsApp',
         description: 'Message us on WhatsApp for quick support',
-        link: 'https://wa.me/442012345678',
+        link: 'https://wa.me/020 805 800 86',
         linkText: 'Chat on WhatsApp'
     }
 ]);
