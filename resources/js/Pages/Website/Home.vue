@@ -1,4 +1,5 @@
 <template>
+    <Head title="Smart POS Global Innovation for Local Success" />
     <div class="app-wrapper">
         <!-- Navbar -->
         <Navbar @request-demo="openDemoModal" />

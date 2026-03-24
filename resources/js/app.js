@@ -9,7 +9,7 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 const appName = import.meta.env.VITE_APP_NAME || '10xGlobal Smart POS- Global Innovation for Local Success';
 
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => title ? `10xGlobal POS - ${title} ` : '10xGlobal POS',
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.vue`,
